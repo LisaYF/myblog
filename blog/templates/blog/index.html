@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% comment %} <h1>{{test}}</h1> {% endcomment %}
+    {% comment %} <h2>test,blog1</h2> {% endcomment %}
+    {% comment %} <h1>{{article.title}}</h1>
+    <h2>{{article.content}}</h2> {% endcomment %}
+    <h1>
+        <a href=''>文章</a>
+    </h1>
+    {% for article in articles %}
+        <a href=''>{{article.title}}</a>
+        <br/>
+    {% endfor %}
+</body>
+</html>
